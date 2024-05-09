@@ -9,7 +9,6 @@ def consonants(word):
 def main():
     print(vowels("matheus"))
     print(consonants("matheus"))
-    
 
 
 if __name__ == "__main__":

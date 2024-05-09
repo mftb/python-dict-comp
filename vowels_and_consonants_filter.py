@@ -11,6 +11,5 @@ def main():
     print(consonants("matheus"))
     
 
-
 if __name__ == "__main__":
     main()
