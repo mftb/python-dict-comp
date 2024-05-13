@@ -17,4 +17,7 @@ As a dict comp works with any iterable, we can use a list or even a generator he
 Example: dict_comp_from_generator.py
 
 Keep in mind that keys and values can be computed from more complex expressions,
-and also that keys must always be immutable (strings, tuples, integers, floats)
+and also that keys must always be immutable (strings, tuples, integers, floats). If try to use, for example, a list as a key you'll get a TypeError.
+
+Example: broken_dict_comp.py
+
