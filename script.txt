@@ -5,3 +5,16 @@ and I briefly mentioned in it that I could do a talk on dictionary comprehension
 
 I like to think of myself as someone worthy of my word, so now, in 2024 I'm back to deliver "Step up your Python dict game: dict comprehensions".
 
+It all starts with a regular Python script (writes empty main function and if __name__ == "__main__").
+
+Then, we can start defining our first dictionary comprehension like this. All dict comprehensions share the same structure: {key: value for value in iterable}
+(open close curly braces, key colon value for value in iterable).
+
+Example: basic_dict_comp.py
+
+As a dict comp works with any iterable, we can use a list or even a generator here.
+
+Example: dict_comp_from_generator.py
+
+Keep in mind that keys and values can be computed from more complex expressions,
+and also that keys must always be immutable (strings, tuples, integers, floats)

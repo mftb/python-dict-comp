@@ -1,12 +1,11 @@
-def main(limit):
+def main(a_list):
     # builds a dictionary with the 10 indo-arabic digits 
-    return {str(x): x for x in range(0, limit)}
+    return {str(x): x for x in a_list}
 
 
 if __name__ == "__main__":
-    digits = main(10)
+    digits = main([1,2,3,4])
     print(digits)
     for digit in digits:
         assert digits[digit] == int(digit)
         assert str(digits[digit]) == digit
-    
