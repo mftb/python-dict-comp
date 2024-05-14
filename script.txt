@@ -21,3 +21,18 @@ and also that keys must always be immutable (strings, tuples, integers, floats).
 
 Example: broken_dict_comp.py
 
+For example, if we want to make a dictionary of the vowels of a string we can apply an expression to the value like this
+{letter: letter in VOWELS for letter in word}
+
+A similar thing can be done for the consonants
+{letter: letter not in VOWELS for letter in word}
+
+By doing this, we can easily know if a letter in a word is a vowel or a consonant.
+
+Example: vowels_and_consonants.py
+
+We can even filter out vowels or consonants with the for element in iterable if condition syntax
+{letter: True for letter in word if letter in VOWELS}
+{letter: True for letter in word if letter not in VOWELS}
+
+Example: vowels_and_consonants_filter.py
