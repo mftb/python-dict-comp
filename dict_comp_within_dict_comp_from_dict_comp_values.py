@@ -1,5 +1,6 @@
 def dict_inception():
-    return {x: {x : True} for x in {str(y): y for y in range(0, 10)}}
+    my_dict = {str(y): y for y in range(0, 10)}
+    return {x: {x : True} for x in my_dict.values()}
 
 
 def main():

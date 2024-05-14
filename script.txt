@@ -16,8 +16,13 @@ As a dict comp works with any iterable, we can use a list or even a generator he
 
 Example: dict_comp_from_generator.py
 
-Keep in mind that keys and values can be computed from more complex expressions,
-and also that keys must always be immutable (strings, tuples, integers, floats). If try to use, for example, a list as a key you'll get a TypeError.
+You can even zip 2 lists together in order to define a dictionary in such a way that the first list provide the keys and the second list, the values.
+
+Example: dict_comp_from_2_lists.py
+
+Keep in mind that keys must always be immutable (strings, tuples, integers, floats).
+If try to use, for example, a list as a key you'll get a TypeError.
+You can also use complex expressions or even call functions to compute your keys and values.
 
 Example: broken_dict_comp.py
 
@@ -36,3 +41,30 @@ We can even filter out vowels or consonants with the for element in iterable if 
 {letter: True for letter in word if letter not in VOWELS}
 
 Example: vowels_and_consonants_filter.py
+
+By doing this, we can exclude unwanted keys and values from our dictionary comprehension.
+
+You can also nest dictionary comprehensions. A dictionary can be used as value, so an expression like this
+{x: {x : True} for x in "string"}
+
+Example: dict_comp_within_dict_comp.py
+
+Is completely valid. You can even take a step beyond and use a dictionary in the for element in iterable clause,
+as by default a dictionary exposes its keys as the iterable:
+{x: {x : True} for x in {str(y): y for y in range(0, 10)}}
+
+Example: dict_comp_within_dict_comp_from_dict_comp.py
+
+Of course, you can also iterate over the values if you want, but then you'll have to define the dictionary separately and call dict.values()
+
+So, to wrap things up, all dictionary comprehensions in Python share the same structure
+Open and Close Curly braces
+{}
+
+Then, add a mapping of a Key to a Value with a Colon for Key / Value in an Iterable
+{Key: Value for Key,Value in Iterable}
+
+Don't forget that Keys are always immutable and that Key, Value and Iterable may be replaced by more complex expressions,
+including other nested dictionary comprehensions, list comprehensions or even set comprehensions, which could be a topic for a DevConf 2025 talk ;-)
+
+Thank you very much, now let's open for Q & A

@@ -1,5 +1,4 @@
 def main(a_list):
-    # builds a dictionary with the 10 indo-arabic digits 
     return {str(x): x for x in a_list}
 
 

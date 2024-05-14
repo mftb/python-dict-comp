@@ -1,7 +1,11 @@
-def main():
+def dict_inception():
     return {x: {x : True} for x in "string"}
 
 
-if __name__ == "__main__":
-    dict_of_dicts = main()
+def main():
+    dict_of_dicts = dict_inception()
     print(dict_of_dicts)
+
+
+if __name__ == "__main__":
+    main()

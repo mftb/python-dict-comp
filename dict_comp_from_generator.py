@@ -1,5 +1,4 @@
 def main(limit):
-    # builds a dictionary with the 10 indo-arabic digits 
     return {str(x): x for x in range(0, limit)}
 
 
