@@ -1,13 +1,16 @@
 Hello! My name is Matheus and I'm a Principal Software Engineer at Red Hat.
 
 I delivered a lightning talk at last year's DevConf, where I discussed functional programming and list comprehensions in Python,
-and I briefly mentioned in it that I could do a talk on dictionary comprehensions as a follow up. You can check its recording in this QR Code.
+and I briefly mentioned in it that I could do a talk on dictionary comprehensions as a follow up.
+You can check its recording in this QR Code.
 
-I like to think of myself as someone worthy of my word, so now, in 2024 I'm back to deliver "Step up your Python dict game: dict comprehensions".
+I like to think of myself as someone worthy of my word,
+so now, in 2024 I'm back to deliver "Step up your Python dict game: dict comprehensions".
 
 It all starts with a regular Python script (writes empty main function and if __name__ == "__main__").
 
-Then, we can start defining our first dictionary comprehension like this. All dict comprehensions share the same structure: {key: value for value in iterable}
+Then, we can start defining our first dictionary comprehension like this.
+All dict comprehensions share the same structure: {key: value for value in iterable}
 (open close curly braces, key colon value for value in iterable).
 
 Example: basic_dict_comp.py
@@ -16,7 +19,8 @@ As a dict comp works with any iterable, we can use a list or even a generator he
 
 Example: dict_comp_from_generator.py
 
-You can even zip 2 lists together in order to define a dictionary in such a way that the first list provide the keys and the second list, the values.
+You can even zip 2 lists together in order to define a dictionary
+in such a way that the first list provide the keys and the second list, the values.
 
 Example: dict_comp_from_2_lists.py
 
@@ -55,7 +59,8 @@ as by default a dictionary exposes its keys as the iterable:
 
 Example: dict_comp_within_dict_comp_from_dict_comp.py
 
-Of course, you can also iterate over the values if you want, but then you'll have to define the dictionary separately and call dict.values()
+Of course, you can also iterate over the values if you want, but then you'll have
+to define the dictionary separately and call dict.values()
 
 So, to wrap things up, all dictionary comprehensions in Python share the same structure
 Open and Close Curly braces
@@ -64,7 +69,8 @@ Open and Close Curly braces
 Then, add a mapping of a Key to a Value with a Colon for Key / Value in an Iterable
 {Key: Value for Key,Value in Iterable}
 
-Don't forget that Keys are always immutable and that Key, Value and Iterable may be replaced by more complex expressions,
-including other nested dictionary comprehensions, list comprehensions or even set comprehensions, which could be a topic for a DevConf 2025 talk ;-)
+Don't forget that Keys are always immutable and that Key, Value and Iterable
+may be replaced by more complex expressions, including other nested dictionary comprehensions,
+list comprehensions or even set comprehensions, which could be a topic for a DevConf 2025 talk ;-)
 
 Thank you very much, now let's open for Q & A
