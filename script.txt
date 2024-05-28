@@ -5,11 +5,11 @@ and I briefly mentioned in it that I could do a talk on dictionary comprehension
 You can check its recording in this QR Code.
 
 I like to think of myself as someone worthy of my word,
-so now, in 2024 I'm back to deliver "Step up your Python dict game: dict comprehensions".
+so now, in 2024 I'm back to Brno to deliver "Step up your Python dict game: dict comprehensions".
 
 It all starts with a regular Python script (writes empty main function and if __name__ == "__main__").
 
-Then, we can start defining our first dictionary comprehension like this.
+Then, we can start defining our first dictionary comprehension.
 All dict comprehensions share the same structure: {key: value for value in iterable}
 (open close curly braces, key colon value for value in iterable).
 
@@ -19,16 +19,16 @@ As a dict comp works with any iterable, we can use a list or even a generator he
 
 Example: dict_comp_from_generator.py
 
-You can even zip 2 lists together in order to define a dictionary
-in such a way that the first list provide the keys and the second list, the values.
+You can even zip 2 iterables together in order to define a dictionary
+in such a way that the first iterable provide the keys and the second iterable, the values.
 
 Example: dict_comp_from_2_lists.py
 
 Keep in mind that keys must always be immutable (strings, tuples, integers, floats).
 If try to use, for example, a list as a key you'll get a TypeError.
-You can also use complex expressions or even call functions to compute your keys and values.
-
 Example: broken_dict_comp.py
+
+You can also use complex expressions or even call functions to compute your keys and values.
 
 For example, if we want to make a dictionary of the vowels of a string we can apply an expression to the value like this
 {letter: letter in VOWELS for letter in word}
@@ -67,10 +67,10 @@ Open and Close Curly braces
 {}
 
 Then, add a mapping of a Key to a Value with a Colon for Key / Value in an Iterable
-{Key: Value for Key,Value in Iterable}
+{Key: Value for Key, Value in Iterable}
 
 Don't forget that Keys are always immutable and that Key, Value and Iterable
 may be replaced by more complex expressions, including other nested dictionary comprehensions,
-list comprehensions or even set comprehensions, which could be a topic for a DevConf 2025 talk ;-)
+list comprehensions or even set comprehensions, which could be a topic for next year's DevConf ;-)
 
 Thank you very much, now let's open for Q & A
