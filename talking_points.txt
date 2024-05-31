@@ -1,0 +1,48 @@
+Hello! My name is Matheus and I'm a Principal Software Engineer at Red Hat.
+
+I delivered a lightning talk at last year's DevConf, where I discussed functional programming and list comprehensions in Python,
+and I briefly mentioned in it that I could do a talk on dictionary comprehensions as a follow up.
+You can check its recording in this QR Code.
+
+I like to think of myself as someone worthy of my word,
+so now, in 2024 I'm back to Brno to deliver "Step up your Python dict game: dict comprehensions".
+
+Python script scaffolding (main, __name__ etc)
+
+Basic structure of a dict comp
+{key: value for value in iterable}
+
+Dict comp with generator
+{str(x): x for x in range(0, limit)}
+
+Dict comp with zip
+{x: y for x, y in zip(a_list, b_list)}
+
+Dict comp with expressions
+VOWELS = "aeiou"
+{letter: letter in VOWELS for letter in word}
+{letter: letter not in VOWELS for letter in word}
+{letter: letter for letter in word if letter not in VOWELS}
+
+Nested dict comp
+{x: {x : True} for x in "string"}
+{x: {x : True} for x in {str(y): y for y in range(0, 10)}}
+my_dict = {str(y): y for y in range(0, 10)}
+{x: {x : True} for x in my_dict.values()}
+
+
+So, to wrap things up, all dictionary comprehensions in Python share the same structure
+Open and Close Curly braces
+{}
+
+Then, add a mapping of a Key to a Value with a Colon for Key / Value in an Iterable
+{Key: Value for Key, Value in Iterable}
+
+Don't forget that Keys are always immutable and that Key, Value and Iterable
+may be replaced by more complex expressions, including other nested dictionary comprehensions,
+list comprehensions or even set comprehensions, which could be a topic for next year's DevConf ;-)
+
+Show github repo QR Code
+
+Thank you very much, now let's open for Q & A
+
