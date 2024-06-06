@@ -5,7 +5,7 @@ and I briefly mentioned in it that I could do a talk on dictionary comprehension
 You can check its recording in this QR Code.
 
 I like to think of myself as someone worthy of my word,
-so now, in 2024 I'm back to Brno to deliver "Step up your Python dict game: dict comprehensions".
+now, in 2024 I'm back to Brno to deliver "Step up your Python dict game: dict comprehensions".
 
 Python script scaffolding (main, __name__ etc)
 
