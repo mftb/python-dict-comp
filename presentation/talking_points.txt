@@ -38,8 +38,9 @@ Open and Close Curly braces
 Then, add a mapping of a Key to a Value with a Colon for Key / Value in an Iterable
 {Key: Value for Key, Value in Iterable}
 
-Don't forget that Keys are always immutable and that Key, Value and Iterable
-may be replaced by more complex expressions, including other nested dictionary comprehensions,
+Don't forget that Keys are always immutable so they must be strings, floats, integers, tuples
+and that Key, Value and Iterable may be replaced by more complex expressions,
+including other nested dictionary comprehensions,
 list comprehensions or even set comprehensions, which could be a topic for next year's DevConf ;-)
 
 Show github repo QR Code
